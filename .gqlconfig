@@ -1,0 +1,19 @@
+{
+  "schema": {
+    "files": "src/frontend/api/schema/**/*.gql"
+  },
+  "query": {
+    files: [
+      {
+        "match": "src/frontend/**/*.ts", 
+        "parser": [
+            "EmbeddedQueryParser", 
+            { 
+                "startTag": "gql`", 
+                "endTag": "`" 
+            }
+        ]
+      }
+    ]
+  },
+}

@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "jsx": "preserve",
+    "baseUrl": "./src/frontend",
+    "module": "esnext",
+    "target": "es5",
+
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+
+    "noImplicitReturns": true,
+    "strict": true
+  },
+  "exclude": ["**/node_modules", "**/*.spec.ts"]
+}

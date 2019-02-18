@@ -1,0 +1,53 @@
+@import "normalize/fonts";
+@import "normalize/colors";
+
+.navbar {
+  width: 100vw;
+  height: 55px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: white;
+
+  position: fixed;
+
+  border-bottom: 1px solid #e2e2e2;
+
+  font-family: $europa-font-family;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+
+    margin: 0 0 0 30px;
+
+    font-size: 18px;
+    font-weight: 600;
+    color: $text-color;
+
+    & > img {
+      margin: 0 10px 0 0;
+    }
+
+    & > div {
+      padding: 3px 0 0 0;
+    }
+
+    cursor: pointer;
+  }
+
+  & > .interactions {
+    & > .link {
+      margin: 0 20px 0 0;
+
+      color: #444;
+
+      &:hover {
+        text-decoration: underline;
+        color: $action-color;
+      }
+    }
+  }
+}

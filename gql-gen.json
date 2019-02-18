@@ -1,0 +1,15 @@
+{
+  "schema": "src/frontend/api/schema/**/*.gql",
+  "overwrite": true,
+
+  "generates": {
+    "src/frontend/api/schema/index.ts": {
+      "plugins": [
+        "typescript-common",
+        "typescript-client",
+        "typescript-server",
+        "typescript-resolvers"
+      ]
+    }
+  }
+}

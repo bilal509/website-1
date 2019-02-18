@@ -1,0 +1,49 @@
+body {
+  margin: 0px;
+}
+
+@font-face {
+  font-family: "europa";
+  src: url("./assets/fonts/europa/europa-light-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "europa";
+  src: url("./assets/fonts/europa/europa-regular-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "europa";
+  src: url("./assets/fonts/europa/europa-bold-webfont.woff") format("woff");
+
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "europa";
+  src: url("./assets/fonts/europa/europa-lightitalic-webfont.woff")
+    format("woff");
+  font-style: italic;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "europa";
+  src: url("./assets/fonts/europa/europa-regularitalic-webfont.woff")
+    format("woff");
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "europa";
+  src: url("./assets/fonts/europa/europa-bolditalic-webfont.woff")
+    format("woff");
+  font-style: italic;
+  font-weight: 700;
+}

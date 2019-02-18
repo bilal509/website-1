@@ -1,0 +1,84 @@
+@import "normalize/fonts";
+@import "normalize/colors";
+
+.userPage {
+  display: flex;
+  justify-content: center;
+
+  font-family: $europa-font-family;
+  color: $text-color;
+
+  & > .container {
+    max-width: 1025px;
+    width: calc(100% - 100px);
+
+    & > .head {
+      margin: 50px 0 0 0;
+
+      font-size: 48px;
+      font-weight: 600;
+    }
+
+    & > .devices {
+      width: 100%;
+
+      padding: 32px 0 0 0;
+
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+
+      @media screen and (max-width: 1120px) {
+        flex-direction: column;
+
+        & > .device {
+          width: calc(100% - 50px) !important;
+        }
+      }
+
+      width: 100%;
+
+      & > .device {
+        margin: 0 0 25px 0;
+        width: 450px;
+        height: 190px;
+
+        padding: 19px 24px;
+        border: 1px solid #d0d0d0;
+        border-radius: 4px;
+
+        background: white;
+
+        cursor: pointer;
+
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+        &:hover {
+          box-shadow: 0 7px 18px rgba(0, 0, 0, 0.11);
+        }
+
+        & > .head {
+          & > .name {
+            margin: 0 10px 0 0;
+
+            font-size: 20px;
+            font-weight: 600;
+          }
+          & > .mac {
+            font-size: 18px;
+          }
+        }
+
+        & > .description {
+          margin: 7px 0 0 0;
+
+          line-height: 23px;
+          font-size: 18px;
+          color: #707070;
+        }
+      }
+    }
+  }
+}

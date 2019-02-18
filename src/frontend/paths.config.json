@@ -1,0 +1,6 @@
+{
+  "homePage": "/",
+  "loginPage": "/auth/login",
+  "userPage": "/user",
+  "eventsPage": "/events"
+}

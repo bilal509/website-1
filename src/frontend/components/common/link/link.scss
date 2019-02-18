@@ -1,0 +1,70 @@
+@import "normalize/colors";
+@import "normalize/fonts";
+
+.link {
+  text-decoration: none;
+
+  font-family: $europa-font-family;
+
+  cursor: pointer;
+
+  &--none {
+    text-decoration: unset;
+    color: unset;
+    cursor: unset;
+  }
+
+  &--underline {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &--color {
+    &--action {
+      &,
+      &:link,
+      &:visited {
+        color: $action-color;
+      }
+    }
+    &--text {
+      &,
+      &:link,
+      &:visited {
+        color: $text-color;
+      }
+    }
+  }
+
+  &--hover {
+    &--action {
+      &:hover {
+        color: $action-color;
+      }
+    }
+    &--text {
+      &:hover {
+        color: $text-color;
+      }
+    }
+  }
+
+  &--noStyles {
+    text-decoration: unset;
+
+    &,
+    &:link,
+    &:visited {
+      color: none;
+    }
+
+    &:hover {
+      color: none;
+    }
+  }
+
+  &__wrapper {
+    display: block;
+  }
+}

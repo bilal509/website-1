@@ -1,0 +1,28 @@
+@import "normalize/fonts";
+@import "normalize/colors";
+
+.textArea {
+  width: calc(100% - #{2 * 16px});
+  height: #{3 * 21px};
+
+  padding: 8px 16px 8px 16px;
+  border: 1px solid $detail-color;
+  border-radius: 4px;
+
+  font-family: $europa-font-family;
+  font-size: 16px;
+  line-height: 21px;
+  color: $text-color;
+
+  resize: none;
+
+  outline: none;
+
+  &::placeholder {
+    color: $text-light-color;
+  }
+
+  &:focus {
+    border-color: $text-color;
+  }
+}
